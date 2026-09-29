@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Aston Fitness</title>
+    <link rel="icon" type="image/x-icon"
+href="/image/favicon.ico">
+</head>
+<body>
+
+    <h1>Sign Up to Aston Fitness</h1>
+
+    <form>
+
+        <p>
+            <label>Email:</label><br>
+            <input type="email" required>
+        </p>
+
+        <p>
+            <label>Password:</label><br>
+            <input type="password" pattern="\w{8,}" required>
+        </p>
+
+        <p>
+            <label>Date of Birth:</label><br>
+            <input type="date">
+        </p>
+
+        <p>
+            <label>Fitness Goal:</label><br>
+            <input type="radio" name="goal"> Lose Weight<br>
+            <input type="radio" name="goal"> Build Muscle<br>
+            <input type="radio" name="goal"> Stay Fit
+        </p>
+
+        <p>
+            <label>Interests:</label><br>
+            <input type="checkbox"> Cardio<br>
+            <input type="checkbox"> Strength Training<br>
+            <input type="checkbox"> Yoga
+        </p>
+
+        <p>
+            <label>Preferred Workout:</label><br>
+            <input list="workouts">
+            <datalist id="workouts">
+                <option value="Gym">
+                <option value="Home">
+                <option value="Outdoor">
+            </datalist>
+        </p>
+
+        <p>
+            <label>Tell us about your fitness goals:</label><br>
+            <textarea rows="4" cols="30"></textarea>
+        </p>
+
+        <button type="submit">Create Account</button>
+
+    </form>
+
+</body>
+</html>
